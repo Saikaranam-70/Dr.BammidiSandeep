@@ -212,6 +212,7 @@
 @media (max-width: 576px) {
   .contact-section {
     padding: 50px 20px;
+    margin-top: 40px;
   }
 
   .contact-title {

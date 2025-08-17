@@ -42,13 +42,52 @@ i18n.use(LanguageDetecter).use(initReactI18next).init({
                 risk_factors: "Risk Factors",
                 investigations: "Investigations",
                 treatment: "Treatment",
-                cancer_specialist:"Cancer Specialist",
+                cancer_specialist:"The FIRST Cancer Surgeon in Srikakulam",
                 address:"Address",
-                addressVal:"123 Cancer Care Lane, Hyderabad, India",
+                addressVal:"Trinetra Superspeciality Hospital, Day and Night Junction Srikakulam, Andhra Pradesh",
                 workingHrs:"Working Hours",
                 sendMessage:"Send Message",
                 design:"Design and Developed By",
                 kolors:"",
+                title: "Organizations",
+                titleAwards: "Honors & Awards",
+    list: [
+      {
+        title: "Best Paper Award",
+        issuer: "IASO NATCON 2022",
+        date: "Oct 2022",
+        details: "Podium presentation, Cash Prize of Rs 10000 by IASO"
+      },
+      {
+        title: "Best Poster Award",
+        issuer: "ASI",
+        date: "Dec 2017",
+        details: "ASICON 2017"
+      },
+      {
+        title: "ASI Young Surgeon South Zone Torrent Pharma Award",
+        issuer: "ASI",
+        date: "Apr 2017",
+        details: "Runner Up - Case Presentation RIF MASS"
+      },
+      {
+        title: "Best Paper Award",
+        issuer: "ASICON 2016",
+        date: "Dec 2016",
+        details: "Best Paper Award"
+      }
+    ],
+  associated: "Associated with",
+  orgs: [
+    { name: "Association of Gynaecological Oncologists of India", role: "Life Member", date: "Oct 2024 - Present" },
+    { name: "Association of breast surgeons of India", role: "Life Member", date: "Oct 2024 - Present" },
+    { name: "Foundation of Head and Neck Oncology", role: "Life Member", date: "Oct 2024 - Present" },
+    { name: "SOCIETY OF SURGICAL ONCOLOGY - SSO", role: "Member", date: "Dec 2023 - Present", associated: "HCG Manavata Oncology LLP" },
+    { name: "ISPSM - INDIAN SOCIETY OF PERITONEAL SURFACE MALIGNANCIES", role: "Life Member", date: "May 2023 - Present" },
+    { name: "INDIAN ASSOCIATION OF SURGICAL ONCOLOGY - IASO", role: "Life Member", date: "Mar 2021 - Present" },
+    { name: "ASI - ASSOCIATION OF SURGEONS OF INDIA", role: "Life Member", date: "Oct 2014 - Present" },
+    { name: "IMA", role: "Life Member", date: "Jul 2014 - Present" }
+  ],
                 cancerInfo: {
                 breast_cancer: {
                     name: "Breast Cancer",
@@ -537,13 +576,52 @@ i18n.use(LanguageDetecter).use(initReactI18next).init({
                 email:"ईमेल",
                 role:"भूमिका",
                 contactNo:"संपर्क संख्या",
-                cancer_specialist:"कैंसर विशेषज्ञ",
+                cancer_specialist:"श्रीकाकुलम में पहले कैंसर सर्जन",
                 address:"पता",
-                addressVal:"123 कैंसर केयर लेन, हैदराबाद, भारत",
+                addressVal:"त्रिनेत्र सुपरस्पेशियलिटी हॉस्पिटल, डे एंड नाइट जंक्शन, श्रीकाकुलम, आंध्र प्रदेश",
                 workingHrs:"कार्य समय",
                 sendMessage:"संदेश भेजें",
                 design:"द्वारा डिज़ाइन और विकसित",
                 kolors:"",
+                title: "संगठन",
+                titleAwards: "सम्मान और पुरस्कार",
+    list: [
+      {
+        title: "सर्वश्रेष्ठ शोध पत्र पुरस्कार",
+        issuer: "IASO NATCON 2022",
+        date: "अक्टूबर 2022",
+        details: "IASO द्वारा पोडियम प्रस्तुति, ₹10000 नकद पुरस्कार"
+      },
+      {
+        title: "सर्वश्रेष्ठ पोस्टर पुरस्कार",
+        issuer: "ASI",
+        date: "दिसंबर 2017",
+        details: "एएसआईकॉन 2017"
+      },
+      {
+        title: "एएसआई यंग सर्जन साउथ जोन टॉरेंट फार्मा पुरस्कार",
+        issuer: "ASI",
+        date: "अप्रैल 2017",
+        details: "रनर अप - केस प्रेजेंटेशन RIF MASS"
+      },
+      {
+        title: "सर्वश्रेष्ठ शोध पत्र पुरस्कार",
+        issuer: "ASICON 2016",
+        date: "दिसंबर 2016",
+        details: "सर्वश्रेष्ठ शोध पत्र पुरस्कार"
+      }
+    ],
+  associated: "संबद्ध",
+  orgs: [
+    { name: "भारत के स्त्री रोग ऑन्कोलॉजिस्ट संघ", role: "आजीवन सदस्य", date: "अक्टूबर 2024 - वर्तमान" },
+    { name: "भारत के स्तन सर्जनों का संघ", role: "आजीवन सदस्य", date: "अक्टूबर 2024 - वर्तमान" },
+    { name: "हेड एंड नेक ऑन्कोलॉजी फाउंडेशन", role: "आजीवन सदस्य", date: "अक्टूबर 2024 - वर्तमान" },
+    { name: "सर्जिकल ऑन्कोलॉजी सोसाइटी - SSO", role: "सदस्य", date: "दिसंबर 2023 - वर्तमान", associated: "HCG मनवता ऑन्कोलॉजी LLP" },
+    { name: "आईएसपीएसएम - भारतीय परिटोनियल सतह घातक रोग सोसायटी", role: "आजीवन सदस्य", date: "मई 2023 - वर्तमान" },
+    { name: "भारतीय सर्जिकल ऑन्कोलॉजी संघ - IASO", role: "आजीवन सदस्य", date: "मार्च 2021 - वर्तमान" },
+    { name: "एएसआई - भारतीय सर्जनों का संघ", role: "आजीवन सदस्य", date: "अक्टूबर 2014 - वर्तमान" },
+    { name: "आईएमए", role: "आजीवन सदस्य", date: "जुलाई 2014 - वर्तमान" }
+  ],
                 cancerInfo: {
     breast_cancer: {
         name: "स्तन कैंसर",
@@ -1039,13 +1117,52 @@ tongue_cancer: {
                 risk_factors: "రిస్క్ ఫ్యాక్టర్స్",
       investigations: "పరిశోధనలు",
       treatment: "చికిత్స",
-      cancer_specialist:"క్యాన్సర్ నిపుణుడు",
+      cancer_specialist:"శ్రీకాకుళంలో మొదటి క్యాన్సర్ సర్జన్",
       address:"చిరునామా",
-                addressVal:"123 క్యాన్సర్ కేర్ లేన్, హైదరాబాద్, భారత్",
+                addressVal:"త్రినేత్ర సూపర్ స్పెషాలిటీ ఆసుపత్రి, డే అండ్ నైట్ జంక్షన్, శ్రీకాకుళం, ఆంధ్ర ప్రదేశ్",
                 workingHrs:"పని గంటలు",
                 sendMessage:"సందేశాన్ని పంపండి",
                 design:"రూపకల్పన మరియు అభివృద్ధి చేసినది",
                 kolors:"",
+                title: "సంస్థలు",
+                titleAwards: "గౌరవాలు & అవార్డులు",
+    list: [
+      {
+        title: "ఉత్తమ పేపర్ అవార్డు",
+        issuer: "IASO NATCON 2022",
+        date: "అక్టోబర్ 2022",
+        details: "IASO నుండి పోడియం ప్రదర్శన, రూ.10000 నగదు బహుమతి"
+      },
+      {
+        title: "ఉత్తమ పోస్టర్ అవార్డు",
+        issuer: "ASI",
+        date: "డిసెంబర్ 2017",
+        details: "అసికాన్ 2017"
+      },
+      {
+        title: "ASI యంగ్ సర్జన్ సౌత్ జోన్ టారెంట్ ఫార్మా అవార్డు",
+        issuer: "ASI",
+        date: "ఏప్రిల్ 2017",
+        details: "రన్నరప్ - కేస్ ప్రెజెంటేషన్ RIF MASS"
+      },
+      {
+        title: "ఉత్తమ పేపర్ అవార్డు",
+        issuer: "ASICON 2016",
+        date: "డిసెంబర్ 2016",
+        details: "ఉత్తమ పేపర్ అవార్డు"
+      }
+    ],
+  associated: "సంబంధం",
+  orgs: [
+    { name: "భారత గైనకాలజికల్ ఆంకాలజిస్టుల సంఘం", role: "జీవిత సభ్యుడు", date: "అక్టోబర్ 2024 - ప్రస్తుతం" },
+    { name: "భారత స్తన శస్త్రచికిత్స వైద్యుల సంఘం", role: "జీవిత సభ్యుడు", date: "అక్టోబర్ 2024 - ప్రస్తుతం" },
+    { name: "తల మరియు మెడ ఆంకాలజీ ఫౌండేషన్", role: "జీవిత సభ్యుడు", date: "అక్టోబర్ 2024 - ప్రస్తుతం" },
+    { name: "శస్త్రచికిత్స ఆంకాలజీ సంఘం - SSO", role: "సభ్యుడు", date: "డిసెంబర్ 2023 - ప్రస్తుతం", associated: "HCG మనవతా ఆంకాలజీ LLP" },
+    { name: "ISPSM - భారత పిరిటోనియల్ సర్ఫేస్ మాలిగ్నెన్సీస్ సంఘం", role: "జీవిత సభ్యుడు", date: "మే 2023 - ప్రస్తుతం" },
+    { name: "భారత శస్త్రచికిత్స ఆంకాలజీ సంఘం - IASO", role: "జీవిత సభ్యుడు", date: "మార్చి 2021 - ప్రస్తుతం" },
+    { name: "ASI - భారత శస్త్రవైద్యుల సంఘం", role: "జీవిత సభ్యుడు", date: "అక్టోబర్ 2014 - ప్రస్తుతం" },
+    { name: "IMA", role: "జీవిత సభ్యుడు", date: "జూలై 2014 - ప్రస్తుతం" }
+  ],
       cancerInfo: {
       breast_cancer: {
         name: "స్తన క్యాన్సర్",
@@ -1535,13 +1652,52 @@ tongue_cancer: {
                 email:"ଇମେଲ୍",
                 role:"ଭୂମିକା",
                 contactNo:"ଯୋଗାଯୋଗ ନମ୍ବର",
-                cancer_specialist:"କ୍ୟାନ୍ସର ବିଶେଷଜ୍ଞ",
+                cancer_specialist:"ଶ୍ରୀକାକୁଳମ୍ରେ ପ୍ରଥମ କ୍ୟାନ୍ସର ସର୍ଜନ୍",
                 address:"ଠିକଣା",
-                addressVal:"123 କ୍ୟାନ୍ସର କେୟାର ଲେନ, ହାଇଦ୍ରାବାଦ, ଭାରତ",
+                addressVal:"ତ୍ରିନେତ୍ର ସୁପର୍ ସ୍ପେସିଆଲିଟି ହସ୍ପିଟାଲ୍, ଡେ ଏଣ୍ଡ ନାଇଟ୍ ଜଙ୍କସନ୍, ଶ୍ରୀକାକୁଳମ୍, ଆନ୍ଧ୍ର ପ୍ରଦେଶ",
                 workingHrs:"କାର୍ଯ୍ୟ ସମୟ",
                 sendMessage:"ବାର୍ତ୍ତା ପଠାନ୍ତୁ",
                 design:"ଡିଜାଇନ୍ ଏବଂ ବିକାଶ କରିଛନ୍ତି",
                 kolors:"",
+                title: "ସଂଗଠନ",
+                 titleAwards: "ସମ୍ମାନ ଏବଂ ପୁରସ୍କାର",
+    list: [
+      {
+        title: "ଶ୍ରେଷ୍ଠ ପେପର ପୁରସ୍କାର",
+        issuer: "IASO NATCON 2022",
+        date: "ଅକ୍ଟୋବର 2022",
+        details: "IASO ପକ୍ଷରୁ ପୋଡିୟମ୍ ପ୍ରସ୍ତୁତି, ନଗଦ ପୁରସ୍କାର ₹10000"
+      },
+      {
+        title: "ଶ୍ରେଷ୍ଠ ପୋଷ୍ଟର ପୁରସ୍କାର",
+        issuer: "ASI",
+        date: "ଡିସେମ୍ବର 2017",
+        details: "ଏସିକନ 2017"
+      },
+      {
+        title: "ASI ଯୁବ ସର୍ଜନ ସାଉଥ୍ ଜୋନ୍ ଟୋରେଣ୍ଟ ଫାର୍ମା ପୁରସ୍କାର",
+        issuer: "ASI",
+        date: "ଏପ୍ରିଲ 2017",
+        details: "ରନର୍ ଅପ୍ - କେସ୍ ପ୍ରେଜେଣ୍ଟେସନ୍ RIF MASS"
+      },
+      {
+        title: "ଶ୍ରେଷ୍ଠ ପେପର ପୁରସ୍କାର",
+        issuer: "ASICON 2016",
+        date: "ଡିସେମ୍ବର 2016",
+        details: "ଶ୍ରେଷ୍ଠ ପେପର ପୁରସ୍କାର"
+      }
+    ],
+  associated: "ସହଭାଗୀ",
+  orgs: [
+    { name: "ଭାରତୀୟ ନାରୀରୋଗ ଅଙ୍କୋଲୋଜିସ୍ଟ୍ ସଂଘ", role: "ଆଜୀବନ ସଦସ୍ୟ", date: "ଅକ୍ଟୋବର 2024 - ବର୍ତ୍ତମାନ" },
+    { name: "ଭାରତୀୟ ସ୍ତନ ସର୍ଜନ୍ ସଂଘ", role: "ଆଜୀବନ ସଦସ୍ୟ", date: "ଅକ୍ଟୋବର 2024 - ବର୍ତ୍ତମାନ" },
+    { name: "ମୁଣ୍ଡ ଏବଂ ଗଳା ଅଙ୍କୋଲୋଜି ଫାଉଣ୍ଡେସନ୍", role: "ଆଜୀବନ ସଦସ୍ୟ", date: "ଅକ୍ଟୋବର 2024 - ବର୍ତ୍ତମାନ" },
+    { name: "ଶଳ୍ୟ ଅଙ୍କୋଲୋଜି ସୋସାଇଟି - SSO", role: "ସଦସ୍ୟ", date: "ଡିସେମ୍ବର 2023 - ବର୍ତ୍ତମାନ", associated: "HCG ମାନବତା ଅଙ୍କୋଲୋଜି LLP" },
+    { name: "ISPSM - ଭାରତୀୟ ପେରିଟୋନିଆଲ ସର୍ଫେସ୍ ମାଲିଗ୍ନାନସିଜ୍ ସଂଘ", role: "ଆଜୀବନ ସଦସ୍ୟ", date: "ମଇ 2023 - ବର୍ତ୍ତମାନ" },
+    { name: "ଭାରତୀୟ ଶଳ୍ୟ ଅଙ୍କୋଲୋଜି ସଂଘ - IASO", role: "ଆଜୀବନ ସଦସ୍ୟ", date: "ମାର୍ଚ୍ଚ 2021 - ବର୍ତ୍ତମାନ" },
+    { name: "ASI - ଭାରତୀୟ ସର୍ଜନ୍ ସଂଘ", role: "ଆଜୀବନ ସଦସ୍ୟ", date: "ଅକ୍ଟୋବର 2014 - ବର୍ତ୍ତମାନ" },
+    { name: "IMA", role: "ଆଜୀବନ ସଦସ୍ୟ", date: "ଜୁଲାଇ 2014 - ବର୍ତ୍ତମାନ" }
+  ],
                 cancerInfo: {
     breast_cancer: {
         name: "ସ୍ତନ କର୍କଟ",

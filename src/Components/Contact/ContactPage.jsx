@@ -7,13 +7,20 @@ import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
-  FaInstagram
+  FaInstagram,
+  FaWhatsapp,
+  FaPhone
 } from "react-icons/fa";
 import "./ContactPage.css";
 import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {
   const {t} = useTranslation();
+  const whatsappNumber = "9052221122";
+  const whatsappMessage = "Hello Doctor, I want to book a consultation.";
+  const whatsappLink = `https://wa.me/+91${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
   return (
     <section className="contact-section">
       <h2 className="contact-title">{t("sidebar_link_consultation")}</h2>
@@ -36,7 +43,7 @@ const ContactPage = () => {
             <FaPhoneAlt className="info-icon" />
             <div>
               <h4>{t("contactNo")}</h4>
-              <p>+91 98765 43210</p>
+              <p>+91 9052881122</p>
             </div>
           </div>
 
@@ -44,33 +51,36 @@ const ContactPage = () => {
             <FaEnvelope className="info-icon" />
             <div>
               <h4>{t("email")}</h4>
-              <p>contact@drbamadisandeep.com</p>
+              <p>drsandeepsurgicaloncologist@gmail.com</p>
             </div>
           </div>
 
-          <div className="info-item">
+          {/* <div className="info-item">
             <FaClock className="info-icon" />
             <div>
               <h4>{t("workingHrs")}</h4>
               <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
-              {/* <p>Sunday: Closed</p> */}
+              {/* <p>Sunday: Closed</p> 
             </div>
-          </div>
+          </div> */}
 
           {/* ===== Social Media Links ===== */}
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <FaFacebookF />
+            <a href={whatsappLink} target="_blank" rel="noreferrer">
+              <FaWhatsapp />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://x.com/drbammidi?s=11&t=_uKV_0m7IisGwobUdclQCw" target="_blank" rel="noreferrer">
               <FaTwitter />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/dr-bammidi-sandeep-a22966238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noreferrer">
               <FaLinkedinIn />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/dr_bammidi_sandeep?igsh=MTczbnNyZjcwd2NmaA%3D%3D&utm_source=qr" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
+            <a href="tel:+919052881122" title="Call Now">
+                      <FaPhone />
+                    </a>
           </div>
         </div>
 
@@ -98,7 +108,7 @@ const ContactPage = () => {
       <div className="map-container">
         <iframe
           title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d658.3486163049307!2d83.90368411836333!3d18.351890252751208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c6ac250b7df1d%3A0x998ac901db4a0024!2sGreat%20Eastern%20Medical%20School%20%26%20Hospital%2C%20Ragolupeta%2C%20Andhra%20Pradesh%20532484!5e1!3m2!1sen!2sin!4v1755274478475!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.51706001664877!2d83.89254382782069!3d18.305438631711002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c15c8afff60c9%3A0x51a524b6178c4fa6!2sTrinetra%20Superspeciality%20eye%20hospital!5e1!3m2!1sen!2sin!4v1755451388994!5m2!1sen!2sin"
           width="100%"
           height="350"
           style={{ border: "0" }}
