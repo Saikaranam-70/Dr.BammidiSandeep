@@ -10,7 +10,7 @@ function Root(){
   const[loading, setLoading] = useState(true);
 
   useEffect(()=>{
-    const timer = setTimeout(()=> setLoading(false), 500)
+    const timer = setTimeout(()=> setLoading(false), 3500)
     return ()=>clearTimeout(timer)
   }, [])
 
