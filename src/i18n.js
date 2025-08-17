@@ -9,7 +9,7 @@ i18n.use(LanguageDetecter).use(initReactI18next).init({
         en: {
             translation: {
                 home_intro: "Dr. Bammidi Sandeep combines extensive surgical expertise with a deep understanding of patient concerns. His training under eminent oncologists across India and hands-on experience in performing complex cancer surgeries make him a reliable choice for patients seeking advanced treatment. He remains dedicated to bringing tertiary-level cancer care to regions like Kutch, ensuring that patients can receive high-quality treatment closer to home. For consultations and comprehensive cancer care, you can connect with Dr. Bommidi Sandeep to take the next step in your journey toward recovery.",
-                home_name:"DR. Bammidi",
+                home_name:"DR. BAMMIDI",
                 home_second_name:"SANDEEP",
                 home_hi:"HELLO I’M",
                 home_intro2:"For consultations and comprehensive cancer care, you can connect with Dr. Bammidi Sandeep to take the next step in your journey toward recovery.",
