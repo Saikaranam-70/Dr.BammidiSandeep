@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://drsandeepbammidi.com/</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://drsandeepbammidi.com/about-dr-bammidi-sandeep</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Testimonials Page -->
+  <url>
+    <loc>https://drsandeepbammidi.com/testimonials</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Know Your Cancer -->
+  <url>
+    <loc>https://drsandeepbammidi.com/knowyourcancer</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Certifications -->
+  <url>
+    <loc>https://drsandeepbammidi.com/certifications</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Organisations -->
+  <url>
+    <loc>https://drsandeepbammidi.com/organisations</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Awards -->
+  <url>
+    <loc>https://drsandeepbammidi.com/awards</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://drsandeepbammidi.com/contact</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

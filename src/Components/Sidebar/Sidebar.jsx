@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Sidebar.css';
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaPhone, FaTwitter } from 'react-icons/fa';
-import logo from '../../assets/logo2.png';
+import logo from '../../assets/ribbon.png';
 import { Link } from 'react-router-dom';
 import i18n from 'i18next';
 
@@ -77,13 +77,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
       <ul className="sidebar-links">
         <Link to='/' onClick={toggleSidebar}><li>{t("sidebar_link_home")}</li></Link>
-        <Link to='/about' onClick={toggleSidebar}><li>{t("sidebar_link_About")}</li></Link>
-        <Link to='/testimonials' onClick={toggleSidebar}><li>{t("sidebar_link_testimonials")}</li></Link>
+        <Link to='/about-dr-bammidi-sandeep' onClick={toggleSidebar}><li>{t("sidebar_link_About")}</li></Link>
+        
         <Link to='/knowyourcancer' onClick={toggleSidebar}><li>{t("sidebar_link_knowAboutCancer")}</li></Link>
         <Link to='/certifications' onClick={toggleSidebar}><li>{t("sidebar_link_certifications")}</li></Link>
         <Link to='/organisations' onClick={toggleSidebar}><li>{t("title")}</li></Link>
         <Link to='/awards' onClick={toggleSidebar}><li>{t("titleAwards")}</li></Link>
         <Link to='/contact' onClick={toggleSidebar}><li>{t("sidebar_link_consultation")}</li></Link>
+        <Link to='/testimonials' onClick={toggleSidebar}><li>{t("sidebar_link_testimonials")}</li></Link>
       </ul>
 
       <div className="sidebar-social">

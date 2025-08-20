@@ -1,30 +1,49 @@
+/* =========================
+   Google Fonts Import
+========================= */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap");
+
+/* =========================
+   Root Variables
+========================= */
 :root {
   --navbar-bg: #f7f7f7;
   --primary-color: #222;
   --highlight-color: #1e88e5;
   --icon-size: 1.6rem;
   --transition-speed: 0.3s;
+
+  /* Font variables */
+  --navbar-font: 'Montserrat', sans-serif;
+  --info-font: 'Roboto', sans-serif;
 }
 
-/* Navbar container */
+/* =========================
+   Navbar Container
+========================= */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 1300px;
   display: flex;
-  max-width: 1100px;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 100px;
   background-color: var(--navbar-bg);
   padding: 0 40px;
   box-sizing: border-box;
-  /* z-index: 2000; Above sidebar background */
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-family: var(--navbar-font);
+  z-index: 1000;
+  margin: 0 auto;
+  padding-right: 150px;
 }
 
-/* Left section */
+/* =========================
+   Left Section
+========================= */
 .navbar-left {
   display: flex;
   align-items: center;
@@ -32,8 +51,8 @@
 }
 
 .navbar-logo {
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
   object-fit: contain;
 }
 
@@ -41,28 +60,67 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: var(--info-font);
 }
 
 .navbar-name {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--primary-color);
+  letter-spacing: 0.5px;
 }
 
 .navbar-specialization {
   font-size: 0.95rem;
   color: var(--highlight-color);
   font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
-/* Hamburger menu button */
+/* =========================
+   Right Section
+========================= */
+.navbar-right {
+  display: flex;
+  align-items: center; /* ✅ centers image + button */
+  gap: 14px;
+}
+
+.navbar-extra-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* =========================
+   Book Consultation Button
+========================= */
+.book-consultation-btn {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color var(--transition-speed);
+}
+
+.book-consultation-btn:hover {
+  background-color: #d81b60;
+}
+
+/* =========================
+   Hamburger Button
+========================= */
 .hamburger {
   background: none;
   border: none;
   font-size: var(--icon-size);
   color: var(--primary-color);
   cursor: pointer;
-  display: none; /* Hidden on desktop */
+  display: none; /* hidden by default */
   transition: color var(--transition-speed);
 }
 
@@ -70,44 +128,114 @@
   color: var(--highlight-color);
 }
 
-/* Show hamburger on mobile */
-@media (max-width: 992px) {
-  .hamburger {
-    display: block;
-  }
-}
+/* =========================
+   RESPONSIVE NAVBAR
+========================= */
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
+/* Extra Small Devices (phones portrait < 480px) */
+@media (max-width: 479px) {
   .navbar {
-    padding: 0 20px;
-    height: 65px;
-  }
-  .navbar-logo {
-    height: 45px;
-    width: 45px;
-  }
-  .navbar-name {
-    font-size: 1rem;
-  }
-  .navbar-specialization {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar {
-    padding: 0 16px;
-    height: 60px;
-  }
-  .navbar-logo {
+    padding: 0 14px;
     height: 70px;
-    width: 70px;
   }
+
+  .navbar-logo {
+    height: 60px;
+    width: 60px;
+  }
+
   .navbar-name {
     font-size: 0.9rem;
   }
+
+  .navbar-specialization {
+    font-size: 0.75rem;
+  }
+
+  .book-consultation-btn,
+  .navbar-extra-img {
+    display: none; /* hide image + button on very small screens */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.6rem;
+  }
+}
+
+/* Small Devices (480px – 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .navbar {
+    padding: 0 18px;
+    height: 60px;
+  }
+
+  .navbar-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar-name {
+    font-size: 1rem;
+  }
+
   .navbar-specialization {
     font-size: 0.8rem;
+  }
+
+  .book-consultation-btn,
+  .navbar-extra-img {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.7rem;
+  }
+}
+
+/* Medium Devices (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    padding: 0 24px;
+    height: 85px;
+  }
+
+  .navbar-logo {
+    height: 65px;
+    width: 65px;
+  }
+
+  .navbar-name {
+    font-size: 1.05rem;
+  }
+
+  .navbar-specialization {
+    font-size: 0.85rem;
+  }
+
+  .book-consultation-btn,
+  .navbar-extra-img {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.8rem;
+  }
+}
+
+/* Devices less than 1300px: Hamburger always visible */
+@media (max-width: 1299px) {
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+/* Devices 1300px and above: Hide hamburger */
+@media (min-width: 1300px) {
+  .hamburger {
+    display: none;
   }
 }

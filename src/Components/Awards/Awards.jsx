@@ -19,9 +19,9 @@ const Awards = () => {
             <p className="award-issuer">
               <strong>{t("issuer")}:</strong> {award.issuer}
             </p>
-            <p className="award-date">
+            {/* <p className="award-date">
               <strong>{t("date")}:</strong> {award.date}
-            </p>
+            </p> */}
             <p className="award-details">{award.details}</p>
           </div>
         ))}

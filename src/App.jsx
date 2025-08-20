@@ -18,13 +18,14 @@ const App = () => {
     <>
     <Navbar toggleSidebar={()=>setSidebar(!sidebarOpen)}/>
     <div className="sideandall">
+      <h1 style={{ display: 'none' }}>Dr. Bammidi Sandeep – Surgical Oncologist in Srikakulam, Vizianagaram & Uddanam</h1>
       <div className="side">
         <Sidebar isOpen={sidebarOpen} toggleSidebar={()=>setSidebar(false)} />
       </div>
     <div >
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/about-dr-bammidi-sandeep' element={<About />} />
         <Route path='/knowyourcancer' element={<CancerInfo />} />
         <Route path='/testimonials' element={<Testimonials />} />
         <Route path='/contact' element={<ContactPage />} />

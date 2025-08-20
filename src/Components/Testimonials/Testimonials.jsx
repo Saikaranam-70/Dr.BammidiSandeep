@@ -11,35 +11,35 @@ const testimonials = [
       "Dr. Bamadi Sandeep is more than just a surgeon – he is a true healer. His kindness, patience, and exceptional skills made my cancer journey far less frightening. I am forever grateful for his care.",
   },
   {
-    name: "Priya Sharma",
+    name: "Paavani",
     relation: "Patient’s Daughter",
     rating: 5,
     message:
       "When my mother was diagnosed, we were terrified. Dr. Sandeep explained everything clearly, reassured us, and performed the surgery flawlessly. His compassion and dedication are unmatched.",
   },
   {
-    name: "Vijay Patel",
+    name: "Sai karanam",
     relation: "Patient",
     rating: 5,
     message:
       "From the first consultation to my recovery, Dr. Sandeep treated me like family. His expertise saved my life, and his positivity gave me hope every single day.",
   },
   {
-    name: "Anita Verma",
+    name: "Ajay",
     relation: "Cancer Survivor",
     rating: 4,
     message:
       "Dr. Sandeep’s professionalism and warm nature helped me fight through the toughest days. His follow-up care was exceptional and deeply appreciated.",
   },
   {
-    name: "Arun Nair",
+    name: "Ramprasad",
     relation: "Patient",
     rating: 5,
     message:
       "A highly skilled surgeon with a heart of gold. Dr. Sandeep ensured I felt safe, cared for, and informed every step of the way.",
   },
   {
-    name: "Sunita Reddy",
+    name: "Prasanthi",
     relation: "Patient’s Sister",
     rating: 4,
     message:

@@ -2,7 +2,7 @@
 
 .organisations-section {
   padding: 2rem;
-  max-width: 58rem;
+  max-width: 59rem;
   margin: 40 auto;
   margin-top: 70px;
   z-index: -1;
@@ -114,4 +114,10 @@
 .organisation-card:focus {
   outline: 2px solid #6892d5;
   outline-offset: 4px;
+}
+
+@media (max-width: 1299px) {
+  .organisations-section{
+    max-width: 1300px;
+  }
 }

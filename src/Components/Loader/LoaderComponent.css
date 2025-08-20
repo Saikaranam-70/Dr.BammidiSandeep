@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #ffffff; /* black background */
+  background: #ffffff;
   color: #000000;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; /* Global font */
   overflow: hidden;
 }
 
@@ -41,15 +41,23 @@
 
 .name p {
   margin: 5px 0;
-  font-size: 22px;
   letter-spacing: 1px;
-  font-weight: 500;
 }
 
+/* Main name font */
 .name p:first-child {
-  font-size: 28px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif; /* Elegant main font */
   font-weight: 700;
   color: #e63946; /* highlight color */
+}
+
+/* Sub font styling */
+.name p:last-child {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; /* clean sub font */
+  font-weight: 700; /* Bold */
+  color: #333;
 }
 
 /* Keyframes */

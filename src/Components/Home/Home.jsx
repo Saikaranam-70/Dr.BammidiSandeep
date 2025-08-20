@@ -1,12 +1,12 @@
 import React from "react";
-
 import "./Home.css";
-import doctorImage from "../../assets/doctor1.png"; // replace with your image path
+import doctorImage from "../../assets/doctor1.png"; 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   const { t } = useTranslation();
+
   return (
     <section className="home">
       <div className="home-content">
@@ -14,23 +14,35 @@ const Home = () => {
         <h1 className="home-name">
           <span className="highlight">{t("home_name")}</span> {t("home_second_name")}
         </h1>
-        <p className="home-description">{t("home_intro")}
-          {/* Dr. Bommidi Sandeep combines extensive surgical expertise with a deep understanding
-          of patient concerns. His training under eminent oncologists across India and
-          hands-on experience in performing complex cancer surgeries make him a reliable
-          choice for patients seeking advanced treatment. He remains dedicated to bringing
-          tertiary-level cancer care to regions like Kutch, ensuring that patients can
-          receive high-quality treatment closer to home. */}
-        </p>
-        <p className="home-description">{t("home_intro2")}
-          {/* For consultations and comprehensive cancer care, you can connect with Dr.
-          Bommidi Sandeep to take the next step in your journey toward recovery. */}
-        </p>
-        <Link to='/about'><button className="home-button">{t("home_button")}</button></Link>
+
+        <p className="home-description">{t("home_intro")}</p>
+        <p className="home-description">{t("home_intro2")}</p>
+
+        <Link to="/about">
+          <button className="home-button">{t("home_button")}</button>
+        </Link>
       </div>
 
+      {/* Doctor Image Flip Card */}
       <div className="home-image">
-        <img src={doctorImage} alt="Dr. Nikunj Chauhan" />
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            {/* Front side - Image */}
+            <div className="flip-card-front">
+              <img src={doctorImage} alt="Dr. Sandeep Bammidi" />
+            </div>
+
+            {/* Back side - Quote */}
+            <div className="flip-card-back">
+              <p className="quote-text">
+                <span className="quote-mark">“</span>
+                {t("home_quote") || "My mission is to bring world-class cancer care closer to patients’ homes, ensuring hope and healing for every family."}
+                <span className="quote-mark">”</span>
+              </p>
+              <p className="quote-author">—{t("about_doctor_full_name")}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

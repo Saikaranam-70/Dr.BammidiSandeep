@@ -19,7 +19,7 @@ const Organisations = () => {
             <p>
               {t("role")}: <span>{org.role}</span>
             </p>
-            <p>{org.date}</p>
+            {/* <p>{org.date}</p> */}
             {org.associated && (
               <p className="associated">
                 {t("associated")}: {org.associated}
