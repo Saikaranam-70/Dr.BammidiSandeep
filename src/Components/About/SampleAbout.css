@@ -1,0 +1,289 @@
+/* ===== About Component Container ===== */
+.about {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.8rem 1.8rem 3.8rem 1.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2a2360;
+  user-select: text;
+  line-height: 1.48;
+}
+
+/* ===== Counters Section ===== */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  flex: 1 1 170px;
+  background: #efe9ff;
+  border-radius: 14px;
+  padding: 1.4rem 2rem;
+  box-shadow: 0 6px 18px rgba(70, 35, 180, 0.12);
+  user-select: none;
+  transition: transform 0.25s ease;
+}
+
+.stat:hover {
+  transform: translateY(-6px);
+}
+
+.stat h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.65rem;
+  color: #523d8b;
+  letter-spacing: 0.03em;
+}
+
+.stat p {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #694dbe;
+}
+
+/* ===== Top Section with Content and Image ===== */
+.top {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+  margin-bottom: 3.8rem;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 2 1 420px;
+}
+
+.aboutTag {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  color: #4228a3;
+  letter-spacing: 0.04em;
+}
+
+.about-content {
+  font-size: 1.1rem;
+  color: #3c2f6e;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+/* Image on side */
+.scope {
+  flex: 1 1 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.scope img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 22px rgba(66, 40, 163, 0.26);
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.scope img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* ===== Banner Image with Contact Details ===== */
+.bannerImg {
+  position: relative;
+  margin-bottom: 3.6rem;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(66, 40, 163, 0.22);
+}
+
+.bannerImg img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  user-select: none;
+}
+
+.contact-details {
+  position: absolute;
+  top: 1.8rem;
+  left: 2.2rem;
+  background: rgba(255 255 255 / 0.9);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  max-width: 280px;
+  box-shadow: 0 4px 24px rgba(99, 66, 193, 0.28);
+  font-weight: 600;
+  color: #453f8f;
+  font-size: 1rem;
+  line-height: 1.4;
+  user-select: text;
+  letter-spacing: 0.02em;
+  user-select: text;
+}
+
+.emailHead {
+  font-weight: 700;
+  margin: 0.7rem 0 0.38rem;
+  font-size: 1.1rem;
+  color: #51356e;
+}
+
+/* ===== Bottom Text Paragraphs ===== */
+.bottom p {
+  margin-bottom: 1.24rem;
+  font-size: 1.07rem;
+  line-height: 1.6;
+  color: #4b3c91;
+  font-weight: 400;
+  user-select: text;
+}
+
+/* ===== Parent container holding map and image ===== */
+.parent {
+  display: flex;
+  gap: 2.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* Map image styling */
+.map {
+  flex: 1 1 320px;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 8px 26px rgba(99, 66, 193, 0.3);
+  overflow: hidden;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+}
+
+/* Image next to map */
+.one {
+  flex: 1 1 120px;
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one img {
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+/* ===== Responsive Adjustments ===== */
+
+/* Below 900px breakpoint */
+@media (max-width: 900px) {
+  .top {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  .content, .scope {
+    flex: none;
+    width: 100%;
+  }
+  .scope img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .contact-details {
+    position: static;
+    margin-top: 1.2rem;
+    max-width: none;
+    box-shadow: none;
+    background: transparent;
+    color: #3c2f6e;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  .bannerImg {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .parent {
+    flex-direction: column;
+  }
+  .map {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: none;
+  }
+  .one {
+    max-width: 120px;
+    margin-top: 1em;
+  }
+}
+
+/* Small screens under 520px */
+@media (max-width: 520px) {
+  .about {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+  .stats {
+    gap: 2rem;
+  }
+  .stat {
+    padding: 1rem 1.3rem;
+  }
+  .aboutTag {
+    font-size: 1.75rem;
+  }
+  .about-content {
+    font-size: 1rem;
+  }
+  .contact-details {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1800px) {
+  .about {
+    padding: 4rem 7vw 5rem 7vw;
+  }
+  .aboutTag {
+    font-size: 3.1rem;
+  }
+  .stats {
+    gap: 6rem;
+    margin-bottom: 4.5rem;
+  }
+  .stat h3 {
+    font-size: 1.65rem;
+  }
+  .stat p {
+    font-size: 1.44rem;
+  }
+  .top {
+    gap: 4.5rem;
+  }
+  .scope img {
+    max-width: 400px;
+  }
+  .bannerImg {
+    margin-bottom: 5.5rem;
+  }
+  .contact-details {
+    font-size: 1.16rem;
+    max-width: 320px;
+    padding: 2.05rem 2.5rem;
+  }
+}

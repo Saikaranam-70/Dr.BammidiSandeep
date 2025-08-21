@@ -1,11 +1,6 @@
-/* =========================
-   Google Fonts Import
-========================= */
+/* 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap");
 
-/* =========================
-   Root Variables
-========================= */
 :root {
   --navbar-bg: #f7f7f7;
   --primary-color: #222;
@@ -13,14 +8,12 @@
   --icon-size: 1.6rem;
   --transition-speed: 0.3s;
 
-  /* Font variables */
+
   --navbar-font: 'Montserrat', sans-serif;
   --info-font: 'Roboto', sans-serif;
 }
 
-/* =========================
-   Navbar Container
-========================= */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -41,9 +34,7 @@
   padding-right: 150px;
 }
 
-/* =========================
-   Left Section
-========================= */
+
 .navbar-left {
   display: flex;
   align-items: center;
@@ -77,12 +68,10 @@
   letter-spacing: 0.3px;
 }
 
-/* =========================
-   Right Section
-========================= */
+
 .navbar-right {
   display: flex;
-  align-items: center; /* ✅ centers image + button */
+  align-items: center; 
   gap: 14px;
 }
 
@@ -92,9 +81,7 @@
   object-fit: contain;
 }
 
-/* =========================
-   Book Consultation Button
-========================= */
+
 .book-consultation-btn {
   background-color: #e91e63;
   color: #fff;
@@ -111,29 +98,26 @@
   background-color: #d81b60;
 }
 
-/* =========================
-   Hamburger Button
-========================= */
 .hamburger {
   background: none;
   border: none;
   font-size: var(--icon-size);
   color: var(--primary-color);
   cursor: pointer;
-  display: none; /* hidden by default */
+  display: none; 
   transition: color var(--transition-speed);
 }
 
 .hamburger:hover {
   color: var(--highlight-color);
-}
+} */
 
 /* =========================
    RESPONSIVE NAVBAR
 ========================= */
 
 /* Extra Small Devices (phones portrait < 480px) */
-@media (max-width: 479px) {
+/* @media (max-width: 479px) {
   .navbar {
     padding: 0 14px;
     height: 70px;
@@ -154,7 +138,7 @@
 
   .book-consultation-btn,
   .navbar-extra-img {
-    display: none; /* hide image + button on very small screens */
+    display: none; 
   }
 
   .hamburger {
@@ -163,7 +147,7 @@
   }
 }
 
-/* Small Devices (480px – 767px) */
+
 @media (min-width: 480px) and (max-width: 767px) {
   .navbar {
     padding: 0 18px;
@@ -194,7 +178,7 @@
   }
 }
 
-/* Medium Devices (768px – 1023px) */
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .navbar {
     padding: 0 24px;
@@ -225,7 +209,7 @@
   }
 }
 
-/* Devices less than 1300px: Hamburger always visible */
+
 @media (max-width: 1299px) {
   .hamburger {
     display: block;
@@ -233,9 +217,8 @@
   }
 }
 
-/* Devices 1300px and above: Hide hamburger */
 @media (min-width: 1300px) {
   .hamburger {
     display: none;
   }
-}
+} */

@@ -244,11 +244,7 @@
             pointer-events: auto;
         }
 
-        /* =========================
-           MEDIA QUERIES
-        ========================= */
-
-        /* Extra Small Devices (phones portrait < 480px) */
+/*    
         @media (max-width: 479px) {
             .sidebar {
                 width: 80%;
@@ -278,7 +274,6 @@
             }
         }
 
-        /* Small Devices (phones landscape / small tablets: 480px – 767px) */
         @media (min-width: 480px) and (max-width: 767px) {
             .sidebar {
                 width: 75%;
@@ -297,7 +292,7 @@
             }
         }
 
-        /* Medium Devices (tablets: 768px – 1023px) */
+
         @media (min-width: 768px) and (max-width: 1023px) {
             .sidebar {
                 width: 60%;
@@ -316,7 +311,6 @@
             }
         }
 
-        /* Devices less than 1300px: Sidebar hidden by default, shown only when toggled */
         @media (max-width: 1299px) {
             .sidebar {
                 transform: translateX(100%);
@@ -338,8 +332,6 @@
                 font-size: 15px;
             }
         }
-
-        /* Standard Desktop (1300px – 1919px) */
         @media (min-width: 1300px) and (max-width: 1919px) {
             .sidebar {
                 width: 500px;
@@ -358,7 +350,7 @@
             }
         }
 
-        /* Large Desktop (1920px – 2559px) - Full HD to QHD */
+
         @media (min-width: 1920px) and (max-width: 2559px) {
             .sidebar {
                 width: 600px;
@@ -381,7 +373,7 @@
             }
         }
 
-        /* Extra Large Desktop (2560px and above) - WQHD and 4K/5K Displays */
+
         @media (min-width: 2560px) {
             .sidebar {
                 width: 700px;
@@ -412,7 +404,6 @@
             }
         }
 
-        /* Ultra-wide monitors (width > 3000px) */
         @media (min-width: 3000px) {
             .sidebar {
                 width: 900px;
@@ -431,7 +422,7 @@
             .sidebar-social a {
                 font-size: 32px;
             }
-        }
+        } */
 
         /* Toggle button for smaller screens */
         .sidebar-toggle {

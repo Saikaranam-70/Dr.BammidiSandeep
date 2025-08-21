@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { FaHeartbeat, FaDna } from "react-icons/fa";
 import { GiBrain, GiRibbon } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
-import "./CancerInfo.css";
+import "./SampleCancerinfo.css";
 
 import breastIcon from '../../assets/cancer_icons/6.png';
 import oracl_cavityIcon from '../../assets/cancer_icons/7.png';

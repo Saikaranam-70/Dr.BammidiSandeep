@@ -1,0 +1,124 @@
+/* Container for the organisations section */
+.organisations-section {
+  padding: 2.7rem 4vw 4rem 4vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #faf9ff;
+  border-radius: 12px;
+  box-shadow: 0 0 28px rgba(100, 50, 210, 0.08);
+}
+
+/* Title styling */
+.organisations-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #3c1477;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.03em;
+  user-select: none;
+}
+
+/* Grid container for organisation cards */
+.organisations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.7rem 2.5rem;
+}
+
+/* Individual organisation card */
+.organisation-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.6rem 1.8rem;
+  box-shadow: 0 4px 24px rgba(60, 20, 119, 0.12);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  user-select: text;
+}
+
+/* Card hover effect */
+.organisation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(60, 20, 119, 0.24);
+}
+
+/* Organisation name */
+.organisation-card h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.23rem;
+  color: #4a1bb8;
+  letter-spacing: 0.02em;
+}
+
+/* Role line */
+.organisation-card p {
+  font-size: 1rem;
+  color: #6e5ea3;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Highlight role text */
+.organisation-card p span {
+  font-weight: 600;
+  color: #3d098d;
+}
+
+/* Associated text */
+.associated {
+  font-style: italic;
+  font-size: 0.92rem;
+  color: #9057cf;
+  margin-top: 0.4rem;
+}
+
+/* Responsive tweaks */
+
+/* Small screens */
+@media (max-width: 520px) {
+  .organisations-section {
+    padding: 1.8rem 2vw 3rem 2vw;
+  }
+  .organisations-title {
+    font-size: 1.78rem;
+  }
+  .organisation-card {
+    padding: 1.3rem 1.5rem;
+  }
+  .organisation-card h3 {
+    font-size: 1.05rem;
+  }
+  .organisation-card p {
+    font-size: 0.93rem;
+  }
+  .associated {
+    font-size: 0.82rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1800px) {
+  .organisations-section {
+    padding: 3.8rem 10vw 5.5rem 10vw;
+  }
+  .organisations-title {
+    font-size: 2.85rem;
+  }
+  .organisation-card {
+    padding: 2.2rem 2.8rem;
+  }
+  .organisation-card h3 {
+    font-size: 1.5rem;
+  }
+  .organisation-card p {
+    font-size: 1.14rem;
+  }
+  .associated {
+    font-size: 1.1rem;
+  }
+}

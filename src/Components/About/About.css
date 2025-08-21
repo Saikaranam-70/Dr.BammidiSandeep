@@ -120,19 +120,17 @@
   margin-bottom: 10px;
   color: #555;
 }
-/* ===== Responsive Fixes ===== */
-
-/* Tablet adjustments */
+/* 
 @media (max-width: 992px) {
   .top {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px; /* reduce space */
+    gap: 20px; 
   }
 
   .scope {
-    width: 70%; /* relative instead of fixed */
+    width: 70%; 
     max-width: 350px;
   }
 
@@ -144,10 +142,10 @@
   }
 }
 
-/* Small devices - Mobile */
+
 @media (max-width: 576px) {
   .about {
-    padding: 40px 20px; /* reduce padding for tighter fit */
+    padding: 40px 20px; 
     margin: 20px auto;
   }
 
@@ -158,16 +156,16 @@
 
   .about-content {
     font-size: 14px;
-    text-align: center; /* center for better mobile look */
+    text-align: center; 
   }
 
   .scope {
-    width: 100%;    /* take full width */
+    width: 100%;   
     max-width: 300px;
   }
 
   .bannerImg img {
-    height: 220px;   /* smaller banner */
+    height: 220px;  
   }
 
   .contact-details {
@@ -201,7 +199,7 @@
   .achievments h4 {
     font-size: 16px;
   }
-}
+} */
 
 .stats {
   display: flex;

@@ -1,0 +1,151 @@
+/* ===========================
+   Cancer Info Layout
+=========================== */
+.cancer-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===========================
+   Sidebar (Cancer List)
+=========================== */
+.cancer-sidebar {
+  flex: 0 0 260px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scroll mobile */
+}
+
+.cancer-tab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  background: #fff;
+  color: #333;
+}
+
+.cancer-tab:hover {
+  background: #f0f0f0;
+}
+
+.cancer-tab.active {
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cancer-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.cancer-png {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* ===========================
+   Details Section
+=========================== */
+.cancer-details {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cancer-details-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.cancer-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cancer-header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.cancer-details ul {
+  margin: 5px 0 15px 20px;
+  padding: 0;
+}
+
+.cancer-details li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+/* ===========================
+   Responsive Layout
+=========================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .cancer-sidebar {
+    flex: 0 0 200px;
+  }
+  .cancer-tab {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .cancer-container {
+    flex-direction: column;
+  }
+
+  .cancer-sidebar {
+    flex: none;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .cancer-tab {
+    flex: 0 0 auto;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 4px;
+  }
+
+  .cancer-details {
+    padding: 20px;
+  }
+
+  .cancer-header h2 {
+    font-size: 20px;
+  }
+}

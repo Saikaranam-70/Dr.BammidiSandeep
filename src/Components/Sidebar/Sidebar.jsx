@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Sidebar.css';
+import './SampleSidebar.css';
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaPhone, FaTwitter } from 'react-icons/fa';
 import logo from '../../assets/ribbon.png';
 import { Link } from 'react-router-dom';

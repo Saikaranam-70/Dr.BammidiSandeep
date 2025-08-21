@@ -9,7 +9,7 @@ import {
   FaLinkedinIn,
   FaInstagram
 } from "react-icons/fa";
-import "./ContactPage.css";
+import "./SampleContactPage.css";
 import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {

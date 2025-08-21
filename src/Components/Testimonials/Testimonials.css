@@ -89,7 +89,7 @@
 }
 
 /* ===== Responsive Styles ===== */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .testimonials-section {
     padding: 80px 20px;
   }
@@ -105,7 +105,7 @@
   .testimonial-name {
     font-size: 16px;
   }
-}
+} */
 
 /* @media (max-width: 1299px) {
   .testimonials-container{

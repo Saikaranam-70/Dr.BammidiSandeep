@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import scope from '../../assets/scope.png';
 import bg4 from '../../assets/bg4.jpg';
-import './About.css';
+import './SampleAbout.css';
 import { useTranslation } from 'react-i18next';
 import map from '../../assets/map.png'
 import one from '../../assets/1st.png'

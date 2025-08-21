@@ -33,7 +33,7 @@
   z-index: -1;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .organisations-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -42,7 +42,7 @@
   .organisations-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
+} */
 
 .organisation-card {
   background: #ffffff;
@@ -116,8 +116,8 @@
   outline-offset: 4px;
 }
 
-@media (max-width: 1299px) {
+/* @media (max-width: 1299px) {
   .organisations-section{
     max-width: 1300px;
   }
-}
+} */

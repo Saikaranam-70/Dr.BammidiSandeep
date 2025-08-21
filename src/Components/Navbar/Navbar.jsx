@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.css';
+import './SampleNavbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from '../../assets/logo.png';
 import navImg from '../../assets/god.png'; // 👈 add your image here

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Certification.css";
+import "./SampleCertifications.css";
 import certificate1 from '../../assets/certificate1.jpg'
 import certificate2 from '../../assets/certificate2.jpg'
 import certificate3 from '../../assets/certificate3.jpg'

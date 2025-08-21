@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./SampleHome.css";
 import doctorImage from "../../assets/doctor1.png"; 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -18,7 +18,7 @@ const Home = () => {
         <p className="home-description">{t("home_intro")}</p>
         <p className="home-description">{t("home_intro2")}</p>
 
-        <Link to="/about">
+        <Link to="/about-dr-bammidi-sandeep">
           <button className="home-button">{t("home_button")}</button>
         </Link>
       </div>

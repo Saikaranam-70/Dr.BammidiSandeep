@@ -1,0 +1,296 @@
+/* ========== Sidebar Container ========== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 340px;
+  max-width: 95vw;
+  height: 100vh;
+  background: rgba(15, 18, 38, 0.95);
+  box-shadow: -2px 0 16px rgba(0,0,0,0.23);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.45s cubic-bezier(0.6, 0, 0.27, 1);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 1.5rem 0.75rem 1rem 0.75rem;
+}
+
+/* Sidebar open (mobile/tablet) */
+.sidebar.open {
+  transform: translateX(0%);
+}
+
+/* ===== Background Crossfade ===== */
+.sidebar-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.sidebar-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0; top: 0;
+  opacity: 0;
+  transition: opacity 1.6s ease;
+  will-change: opacity;
+  pointer-events: none;
+}
+.sidebar-bg img.active {
+  opacity: 0.25;
+  z-index: 1;
+}
+
+/* ===== Sidebar Close Button (Mobile only) ===== */
+.sidebar-close {
+  position: absolute;
+  left: 14px;
+  top: 18px;
+  background: rgba(45,50,80,0.75);
+  border: none;
+  color: #fff;
+  font-size: 2.1rem;
+  border-radius: 50%;
+  width: 40px; height: 40px;
+  display: flex;
+  align-items: center; justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.15);
+  transition: background 0.25s;
+}
+.sidebar-close:hover {
+  background: #a31dcc;
+  color: #fff;
+  transform: rotate(90deg) scale(1.12);
+}
+
+/* Hide close button on desktop */
+@media (min-width: 601px) {
+  .sidebar-close.mobile-only {
+    display: none;
+  }
+}
+
+/* ========= Language Selector ========= */
+.language-selector {
+  margin: 14px 0 12px 0;
+  width: 88%;
+}
+.language-selector select {
+  width: 100%;
+  padding: 0.6em 0.9em;
+  margin-top: 50px;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 1.08em;
+  font-weight: 500;
+  color: #000000;
+  border: 2px solid #e2e1fa;
+  background-color: transparent;
+  outline: none;
+  transition: border 0.2s;
+}
+.language-selector select:focus {
+  border-color: #673ab7;
+}
+
+/* ========= Logo ========== */
+.sidebar-logo {
+  width: 250px;
+  margin:  auto 2em auto;
+  text-align: center;
+}
+.sidebar-logo img {
+  width: 258px;
+  height: auto;
+  filter: drop-shadow(0 2px 6px #2c339b33);
+  transition: transform 0.28s cubic-bezier(0.56,0.17,0.34,1.3);
+}
+.sidebar-logo img:hover {
+  transform: scale(1.07) rotate(-7deg);
+}
+
+/* ===== Sidebar Links ===== */
+.sidebar-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+.sidebar-links a {
+  text-decoration: none;
+}
+.sidebar-links li {
+  /* background: rgba(255,255,255,0.12); */
+  padding: .07em 1.1em;
+  border-radius: 13px;
+  color: #fff;
+  font-size: 1.03em;
+  font-weight: 560;
+  margin-top: 0px; margin-bottom: 0;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background 0.28s, transform 0.20s;
+  box-shadow: 0 1px 4px rgba(35,27,64,0.02);
+}
+.sidebar-links li:hover {
+  background: #a31dcc;
+  transform: translateX(-7px) scale(1.04);
+}
+
+/* ===== Social Links ===== */
+.sidebar-social {
+  margin: 2.0em 0 1.1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 19px;
+}
+.sidebar-social a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.22s, transform 0.22s;
+}
+.sidebar-social a:hover {
+  color: #f63de7;
+  transform: scale(1.13) rotate(-5deg);
+}
+
+/* ===== Developer/Brand Info ===== */
+.sidebar-developer {
+  margin-top: auto;
+  padding: 0.9em 0 0.11em 0;
+  text-align: center;
+  font-size: 0.98em;
+  color: #ffe270;
+  text-shadow: 0 1px 2px #1f105f55;
+  letter-spacing: 0.03em;
+}
+.sidebar-developer a {
+  font-weight: bold;
+  color: yellow;
+  border-bottom: 1.5px dashed #ffc13b;
+  transition: color 0.19s;
+}
+.sidebar-developer a:hover {
+  color: #f63de7;
+}
+
+/* ========= Responsive Breakpoints ========= */
+
+/* Big tablets, laptops: sticky sidebar on right */
+@media (min-width: 900px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    transform: none !important;
+    transition: none !important;
+    width: 320px;
+    max-width: 320px;
+    height: 100vh;
+    box-shadow: -2px 0 16px rgba(0,0,0,0.18);
+    pointer-events: auto;
+    z-index: 1200;
+  }
+}
+
+/* Smaller tablets and mobiles: fixed sliding sidebar on right */
+@media (max-width: 899px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 97vw;
+    max-width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.45s cubic-bezier(0.6, 0, 0.27, 1);
+    box-shadow: -2px 0 16px rgba(0,0,0,0.29);
+  }
+  .sidebar.open {
+    transform: translateX(0%);
+  }
+}
+
+/* Big tablets, medium laptops adjustments */
+@media (max-width: 900px) and (min-width: 601px) {
+  .sidebar {
+    width: 270px;
+    padding: 1.3rem 0.44rem 0.7rem 0.44rem;
+  }
+  .sidebar-logo {
+    width: 112px;
+    margin-bottom: 1.3em;
+  }
+}
+
+/* Mobiles and small tablets */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 97vw;
+    max-width: 100vw;
+    padding: 1.08rem 0.14rem 0.82rem 0.14rem;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+  }
+  .sidebar-bg img.active {
+    opacity: 0.19;
+  }
+  .sidebar-logo img {
+    width: 75px;
+  }
+  .sidebar-links li {
+    padding: 0.93em 0.7em;
+    font-size: 0.96em;
+  }
+  .sidebar-social {
+    font-size: 1.68rem;
+    gap: 13px;
+  }
+}
+
+/* Ultra Wide & TVs */
+@media (min-width: 1800px) {
+  .sidebar {
+    width: 450px;
+    font-size: 1.24em;
+  }
+  .sidebar-logo {
+    width: 220px;
+  }
+  .sidebar-logo img {
+    width: 170px;
+  }
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #332b5f44;
+  border-radius: 4px;
+}
+
+/* Animate Sidebar Entrance */
+.sidebar {
+  opacity: 0.98;
+  pointer-events: auto;
+}
+/* .sidebar:not(.open) {
+  pointer-events: none;
+} */
