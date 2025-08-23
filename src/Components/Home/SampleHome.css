@@ -87,9 +87,9 @@
 .flip-card {
   width: 97%;
   max-width: 330px;
-  height: 595px;
+  height: 495px;
   border-radius: 2.3em;
-  box-shadow: 0 8px 44px #9747fa17, 0 1px 8px #25124805;
+  /* box-shadow: 0 8px 44px #9747fa17, 0 1px 8px #25124805; */
   perspective: 1900px;
   background: transparent;
 }
@@ -105,6 +105,7 @@
 .flip-card:hover .flip-card-inner,
 .flip-card:focus-within .flip-card-inner {
   transform: rotateY(180deg);
+  border-radius: 50px;
 }
 
 /* Front */
@@ -143,6 +144,7 @@
   align-items: center;
   padding: 2.1em 1.25em 2em 1.25em;
   text-align: center;
+  border-radius: 50px;
 }
 .quote-text {
   font-size: 1rem;
@@ -217,6 +219,10 @@
   }
   .home-image {
     margin-bottom: 1.7em;
+    width: 500px;
+  }
+  .flip-card{
+    height: 400px;
   }
 }
 
@@ -242,18 +248,29 @@
     padding: 0;
   }
   .flip-card {
-    max-width: 340px;
-    height: 460px;
+    max-width: 540px;
+    height: 360px;
     font-size: 1px;
   }
   .flip-card-front img {
-    width: 90vw;
+    width: 100vw;
+    height: 500px;
+    width: 300px;
     min-width: 112px;
     max-width: 210px;
   }
   .flip-card-back {
     font-size: 0.97em;
     padding: 1.1em 0.5em 1em 0.7em;
+  }
+  .quote-author{
+    font-size: 15px;
+  }
+  .home-image{
+    width: 500px;
+  }
+  .quote-mark{
+    padding: 15px;
   }
 }
 

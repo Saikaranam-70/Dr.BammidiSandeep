@@ -65,7 +65,7 @@ const About = () => {
         <img src={bg4} alt="" />
         <div className="contact-details">
             <h4 className='emailHead'>{t("email")}</h4>
-            <p>drsandeepsurgicaloncologist@gmail.com</p>
+            <p>drsandeepbammidi@gmail.com</p>
             <h4 className='emailHead'>{t("role")}</h4>
             <p>Surgical Oncologist</p>
             <h4 className='emailHead'>{t("contactNo")}</h4>
@@ -76,7 +76,7 @@ const About = () => {
       <div className="bottom">
         <p>{t("about_para2")}</p>
         <p>{t("about_para3")}</p>
-        <p>{t("about_para4")}</p>
+        {/* <p>{t("about_para4")}</p> */}
         <p>{t("about_para5")}</p>
         <p>{t("about_para6")}</p>
       </div>

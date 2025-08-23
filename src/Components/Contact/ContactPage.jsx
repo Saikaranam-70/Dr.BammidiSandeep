@@ -87,7 +87,7 @@ const ContactPage = () => {
             <FaEnvelope className="info-icon" />
             <div>
               <h4>{t("email")}</h4>
-              <p>drsandeepsurgicaloncologist@gmail.com</p>
+              <p>drsandeepbammidi@gmail.com</p>
             </div>
           </div>
 

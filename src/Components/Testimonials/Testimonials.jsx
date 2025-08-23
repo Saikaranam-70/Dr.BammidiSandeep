@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import "./Testimonials.css";
-
+import paper1 from '../../assets/paper3.jpg'
+import paper2 from '../../assets/paper4.jpg'
 const testimonials = [
   {
     name: "Ravi Kumar",
@@ -61,6 +62,16 @@ const StarRating = ({ rating }) => {
 };
 
 const Testimonials = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (img) => {
+    setSelectedImage(img);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section className="testimonials-section">
       <h2>What Patients Say</h2>
@@ -75,6 +86,29 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
+
+      {/* === IMAGES SECTION === */}
+      <div className="testimonial-images">
+        <img
+          src={paper1}
+          alt="Testimonial 1"
+          onClick={() => handleImageClick(paper1)}
+        />
+        <img
+          src={paper2}
+          alt="Testimonial 2"
+          onClick={() => handleImageClick(paper2)}
+        />
+      </div>
+
+      {/* === MODAL POPUP === */}
+      {selectedImage && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content">
+            <img src={selectedImage} alt="Full View" />
+          </div>
+        </div>
+      )}
     </section>
   );
 };

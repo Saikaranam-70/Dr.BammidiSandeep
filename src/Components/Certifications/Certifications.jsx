@@ -4,6 +4,7 @@ import certificate1 from '../../assets/certificate1.jpg'
 import certificate2 from '../../assets/certificate2.jpg'
 import certificate3 from '../../assets/certificate3.jpg'
 import certificate4 from '../../assets/certificate4.jpg'
+import certificate5 from '../../assets/certificate5.jpg'
 
 const certificates = [
   {
@@ -33,7 +34,14 @@ const certificates = [
     issuer: "Singapoor Genaral Hospital",
     date: "2025",
     image: certificate4,
-  }
+  },
+  {
+    id: 5,
+    title: "Best Video/Paper/Poster Presentation at Annual National Conference of India Association of Surgical Oncology",
+    issuer: "Indian Association of Surgical Oncology Madurai",
+    date: "2022",
+    image: certificate5,
+  },
 ];
 
 export default function Certifications() {

@@ -6,8 +6,10 @@
   padding: 0.85rem 2.5rem;
   background: #1a173a;
   box-shadow: 0 2px 14px rgb(62 8 199 / 0.25);
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 1300;
   user-select: none;  
 }
@@ -20,7 +22,7 @@
 }
 
 .navbar-logo {
-  height: 54px;
+  height: 64px;
   width: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -139,6 +141,9 @@
     font-size: 0.96rem;
     padding: 0.52em 1.5em;
     border-radius: 28px;
+  }
+  .hamburger.mobile-only {
+    display: block;
   }
 }
 
